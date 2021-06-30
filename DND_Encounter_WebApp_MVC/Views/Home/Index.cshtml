@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">D&D 5E Encounter Builder</h1>
+    <p>Search by Challenge Rating:</p>
+    <form method="post">
+        <label for="CR_Min_Value">Minimum CR:</label>
+        <input type="number" name="CR_Min_Value" min="0" max="30" />
+        <label for="CR_Max_Value">Maximum CR:</label>
+        <input type="number" name="CR_Max_Value" min="0" max="30" />
+        <input type="submit" />
+    </form>
+</div>
