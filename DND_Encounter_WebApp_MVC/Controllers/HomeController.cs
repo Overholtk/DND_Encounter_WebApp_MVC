@@ -13,6 +13,8 @@ using System.Threading.Tasks;
 namespace DND_Encounter_WebApp_MVC.Controllers
 {
     // Root myDeserializedClass = JsonConvert.DeserializeObject<Root>(myJsonResponse); 
+
+    //JSON translation classes:
     public class Result
     {
         [JsonProperty("index")]
@@ -34,11 +36,8 @@ namespace DND_Encounter_WebApp_MVC.Controllers
         public List<Result> Results { get; set; }
     }
 
-    public class Test
-    {
-        public int count { get; set; }
-        public List<object> results { get; set; }
-    }
+
+    //Controller:
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
